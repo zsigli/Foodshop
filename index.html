@@ -118,5 +118,30 @@
     <td class="kep"><img src="Burgerpageimg/e59f255c-7498-4b84-9c9d-e578bf5d88fc.jpg" alt=""></td>
     <td class="kep"><img src="Burgerpageimg/l-intro-1653066580.jpg" alt=""></td>
    </table>
+   <h2>Want to order?</h2>
+   <label for="type">What Food do you want to order? </label>
+   <br>
+   <input type="text" id="type">
+   <br>
+   <label for="Address">Address</label>
+   <br>
+   <input type="text" name="Address" id="Address">
+   <br>
+   <select id="mySelect" onchange="myFunction()">
+    <option id="1">Card      </option>
+   <option id="2">Paypal</option>
+   <option>On delivery</option>
+  </select>
+  <P>Payment method:</P>
+  <p id="demo"></p> 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("mySelect");
+      var i = x.selectedIndex;
+      document.getElementById("demo").innerHTML = x.options[i].text;
+
+    }
+    </script>
+    
 </body>
 </html>
